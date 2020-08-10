@@ -7,7 +7,6 @@ class BackgroundImage extends React.Component {
         this.state = {
             image: props.initialImage
         };
-        console.log(this);
     }
 
     async getNewImage() {
@@ -30,7 +29,7 @@ class BackgroundImage extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(() => this.updateImage(), 10000);
+        setInterval(() => this.updateImage(), 300000);
     }
 
     render() {
