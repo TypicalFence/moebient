@@ -1,17 +1,39 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  z-index: 100;
+  flex-direction: row;
+  padding: 3rem;
 }
+
+/* text */
+.main {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1;
+
+}
+
+.main p {
+    margin: 0;
+}
+
+.position-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.position-container.right {
+    flex-direction: row-reverse;
+    align-items: end;
+    text-align: right;
+}
+

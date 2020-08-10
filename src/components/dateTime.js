@@ -18,8 +18,11 @@ class DateTime extends React.Component {
         const time = state.date.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
         return <div className="date-time">
-            <p>{date}</p>
+            <style jsx>{`
+            
+            `}</style>
             <p>{time}</p>
+            <p>{date}</p>
         </div>;
     }
 }
